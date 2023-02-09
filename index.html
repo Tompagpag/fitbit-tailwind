@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <title>Fitbit tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'header-img': "linear-gradient(45deg, rgba(242,148,146,0.9457983877144608) 0%, rgba(166,120,125,0.8113446062018558) 50%, rgba(59,188,240,0.8869748583026961) 92%), url('./images/03-Montre-560x420.jpg')",
+          }
+        },
+        fontFamily: {
+          'sans': ['Montserrat'],
+        },
+        colors: {
+          'white': '#ffffff',
+          'black': '#000000',
+          'bleu': '#114357',
+          'bleu-clair': '#3BBCF0',
+          'mauve': '#A6787D',
+          'rose': '#F29492',
+        }
+      }
+    }
+  </script>
+</head>
+<body class="my-0 mx-auto w-[1060px] font-['Montserrat']">
+    <header class="h-96 flex flex-col justify-around bg-header-img bg-center bg-cover text-white rounded-b-3xl" id="entete">
+      <div class="pt-5 flex justify-around">
+        <img class="h-12" src="images/logo fitbit blanc.png" alt="logo">
+        <nav id="bt-menu" class="flex items-center">
+          <ul class="flex flex-row">
+            <li class="pr-4"><a href="#">Accueil</a></li>
+            <li class="pr-4"><a href="#">Présentation</a></li>
+            <li class="pr-4"><a href="#">Fonctionnalité</a></li>
+            <li class="pr-4"><a href="#">L'application</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="titre" class="my-10 pt-4 container flex justify-between flex-col items-center">
+        <h1 class="text-6xl my-5 font-extrabold">LA FITBIT FREE</h1>
+        <h3 class="text-xl my-5 font-thin">Votre montre connectée nouvelle génération</h3>
+        <a class="my-5 bg-transparent hover:bg-white text-white font-semibold hover:text-rose py-2 px-4 border border-white hover:border-transparent rounded-full" href="#">Découvrir</a>
+      </div>
+    </header>
+
+    <main class="text-black container m-20">
+      <section id="dream-watch" class="flex">
+        <div class="yoga-img">
+          <img src="images/yoga-zen.png" alt="">
+        </div>
+        <div class="text flex flex-col justify-center">
+          <h2 class="text-2xl mb-10 fond-bold">La montre dont vous aviez toujours rêvé</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque perferendis, eveniet vitae error corporis totam ipsa incidunt porro eum eius laborum dignissimos quibusdam vel. Exercitationem consectetur expedita debitis sit ea.
+          </p>
+        </div>
+      </section>
+      <section class="shadow text-center" id="product-infos">
+        <h2 class="text-2xl mb-10 fond-bold text-rose">Vous ne la quitterez plus</h2>
+        <div>
+          <img src="" alt="">
+        </div>
+      </section>
+    </main>
+</body>
+</html>
